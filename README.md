@@ -32,6 +32,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Vue JS 2.0 (020520)
 
+```
 cmd:
 npm install -g @vue/cli
 vue --version
@@ -39,17 +40,21 @@ vue create vue-quiz
 cd vue-quiz
 npm run serve
 npm i --save bootstrap-vue bootstrap
+```
 
 ## LEARN:
 
+```
 ref: https://www.youtube.com/watch?v=4deVCNJq3qc
 Vuejs2 + bootstrap-vue + API(fetch) // till time 01:50:00
 Vuex + Vue-Router
+```
 
-### ===================================================
+===================================================
 
-===DIRECTIVES:=====================================
+## ===DIRECTIVES:=====================================
 
+```
 - v-model // 2-way binding, msg is the data/state attribute
   <input v-model="msg" />
 
@@ -93,12 +98,14 @@ Vuex + Vue-Router
     <li>{{cat.name | capitalize | trimIt}}</li>
 
 - {{}} computed // displays the computed value as per the logic
+```
 
-### ===================================================
+===================================================
 
-===new Vue({})=====================================
+## ===new Vue({})=====================================
 new Vue({options object}) - to create new app.
 
+```
 el: "#app1" // root dom element
 component: [] // list of all components used
 data: {} // data/state to be used in app
@@ -111,9 +118,11 @@ mounted: function(){} // very useful for manual mounting of Vue app (vm.\$mount(
 updated: function(){}
 destroyed: function(){}
 and various other lifecycle methods... (refer lifecycle diagram on vue docs)
+```
 
 ---
 
+```
 OPTIONS OBJECT in new Vue(
 {
 el: "#app1", // el to bind app to a dom element
@@ -142,27 +151,33 @@ if(this.newCat.length>2) return this.newCat+"y";
 }
 }
 })
+```
 
-### ===================================================
+===================================================
 
-===Vue.component('c1',{})==========================
+## ===Vue.component('c1',{})==========================
 
+```
 props: [] // props received from parent.
 template: "" // html template
+```
 
 ---
 
+```
 Vue.component('cat-list',{
 props: [ // props are dynamic props received while invoking component
 'cats'
 ],
 template: `// template for dynamic html <ul><li>cat</li></ul>`
 })
+```
 
-### ===================================================
+===================================================
 
-===EXAMPLES========================================
+## ===EXAMPLES========================================
 
+```
 1. NEW APP:
    <div id="root">
        {{msg}}
@@ -178,5 +193,6 @@ template: `// template for dynamic html <ul><li>cat</li></ul>`
    Vue.component('cat-list',{
    template: `<ul><li>cat</li></ul>`
    })
+```
 
-### ===================================================
+===================================================
